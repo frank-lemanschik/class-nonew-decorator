@@ -1,4 +1,6 @@
 # class-nonew-decorator
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/direktspeed/class-nonew-decorator.svg)](https://greenkeeper.io/)
 [![Build Status][build]][link]
 [![semantic-release][semantic-image] ][semantic-url]
 [build]: https://travis-ci.org/direktspeed/class-nonew-decorator.svg?branch=master

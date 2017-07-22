@@ -1,5 +1,5 @@
 # class-nonew-decorator
-[![Build Status][build]][link]
+[![Build Status][build]][link]]
 [![semantic-release][semantic-image] ][semantic-url]
 [build]: https://travis-ci.org/direktspeed/class-nonew-decorator.svg?branch=master
 [link]: https://travis-ci.org/direktspeed/class-nonew-decorator
@@ -13,15 +13,32 @@ Allows to create an Instance from a JavaScript Class without invoking `new` keyw
 ```bash
 npm i class-nonew-decorator --save
 ```
-# Use
+# Use with ES6
 
 ```javascript
-import nonew from "class-nonew-decorator";
+import nonew from 'class-nonew-decorator';
 
 @nonew()
 class IamClass {
     constructor() {
-        console.log("IamClass Instance!");
+        console.log('IamClass Instance!');
+    }
+}
+
+console.log(new IamClass() instanceof IamClass);  // true
+
+console.log(IamClass() instanceof IamClass);  // true
+```
+
+# Use with CJS
+
+```javascript
+const nonew = require('class-nonew-decorator');
+
+@nonew()
+class IamClass {
+    constructor() {
+        console.log('IamClass Instance!');
     }
 }
 

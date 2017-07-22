@@ -1,37 +1,36 @@
 {
-  "name": "classy-decorator",
-  "version": "1.0.4",
-  "description": "Create an instance of your javascript class without `new` keyword because this is more classy ;)",
-  "main": "lib/index.js",
+  "name": "class-nonew-decorator",
+  "version": "1.0.5",
+  "description": "Create an instance of your javascript class without `new` keyword",
+  "main": "dist/index.js",
   "scripts": {
-    "compile": "babel -d lib/ src/",
-    "test": "npm run compile && mocha --compilers js:babel-core/register",
-    "prepublish": "npm run compile"
+    "build": "babel -d dist/ src/",
+    "test": "npm run build && mocha --compilers js:babel-core/register",
+    "prepublish": "npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digital-flowers/classy-decorator.git"
+    "url": "git+https://github.com/direktspeed/class-nonew-decorator.git"
   },
   "keywords": [
     "class",
     "instance",
     "without",
     "new",
-    "classy"
+    "nonew"
   ],
-  "author": "Fareed Alnamrouti <digital.flowers@hotmail.com>",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/digital-flowers/classy-decorator/issues"
+    "url": "https://github.com/direktspeed/class-nonew-decorator/issues"
   },
-  "homepage": "https://github.com/digital-flowers/classy-decorator#readme",
+  "homepage": "https://github.com/direktspeed/class-nonew-decorator#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "mocha": "^3.4.1"
+    "mocha": "^3.4.2"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0"

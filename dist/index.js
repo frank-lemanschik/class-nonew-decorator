@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var classy = function classy() {
+var nonew = function nonew() {
     return function (Class) {
         var _Class = function _Class() {
             for (var _len = arguments.length, rest = Array(_len), _key = 0; _key < _len; _key++) {
@@ -17,4 +17,4 @@ var classy = function classy() {
     };
 };
 
-exports.default = classy;
+exports.default = nonew;

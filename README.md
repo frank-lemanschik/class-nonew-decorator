@@ -1,23 +1,31 @@
-# classy-decorator
-Create an instance from your javascript class without `new` keyword because this is more classy ;)
+# class-nonew-decorator
+[![Build Status][build]][link]
+[![semantic-release][semantic-image] ][semantic-url]
+[build]: https://travis-ci.org/direktspeed/class-nonew-decorator.svg?branch=master
+[link]: https://travis-ci.org/direktspeed/class-nonew-decorator
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
 
-install
+Allows to create an Instance from a JavaScript Class without invoking `new` keyword.
+
+# Install
 
 ```bash
-npm i classy-decorator --save
+npm i class-nonew-decorator --save
 ```
-very easy to use
-```javascript
-import classy from "classy-decorator";
+# Use
 
-@classy()
-class IamClassy {
+```javascript
+import nonew from "class-nonew-decorator";
+
+@nonew()
+class IamClass {
     constructor() {
-        console.log("IamClassy Instance!");
+        console.log("IamClass Instance!");
     }
 }
 
-console.log(new IamClassy() instanceof IamClassy);  // true
+console.log(new IamClass() instanceof IamClass);  // true
 
-console.log(IamClassy() instanceof IamClassy);  // true
+console.log(IamClass() instanceof IamClass);  // true
 ```

@@ -1,29 +1,18 @@
 import "babel-polyfill";
 import assert from "assert";
-import classy from "../lib/index";
+import nonew from "../dist/index";
 
-/*
- * Fixtures
- */
-
-@classy()
-class IamClassy {
+describe('nonew decorator', () => {
+  @nonew()
+  class IamClass {
     constructor(a, b) {
-        this.a = a;
-        this.b = b;
-        console.log("IamClassy Instance!");
+      this.a = a;
+      this.b = b;
+      console.log("IamClasss Instance!");
     }
-}
+  }
 
-/*
- * Tests
- */
-
-
-describe('decorator', () => {
-    it("create an instance from class with `new` keyword", () => assert(new IamClassy() instanceof IamClassy));
-
-    it("create an instance from class without `new` keyword", () => assert(IamClassy() instanceof IamClassy));
-
-    it("passing constructor arguments", () => assert(IamClassy(1, 2).b === 2));
+  it("create an instance from class with `new` keyword", () => assert(new IamClass() instanceof IamClass));
+  it("create an instance from class without `new` keyword", () => assert(IamClass() instanceof IamClass));
+  it("passing constructor arguments", () => assert(IamClass(1, 2).b === 2));
 });

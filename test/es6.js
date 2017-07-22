@@ -2,7 +2,7 @@ import "babel-polyfill";
 import assert from "assert";
 import nonew from "../dist/index";
 
-describe('nonew decorator', () => {
+describe('imported nonew decorator', () => {
   @nonew()
   class IamClass {
     constructor(a, b) {

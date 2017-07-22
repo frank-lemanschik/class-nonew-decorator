@@ -5,3 +5,4 @@ const nonew = () => Class => {
 };
 
 export default nonew;
+module.exports = nonew;

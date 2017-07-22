@@ -18,3 +18,5 @@ var nonew = function nonew() {
 };
 
 exports.default = nonew;
+
+module.exports = nonew;

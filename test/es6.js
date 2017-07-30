@@ -1,4 +1,3 @@
-import "babel-polyfill";
 import assert from "assert";
 import nonew from "../dist/index";
 

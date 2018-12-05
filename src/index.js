@@ -4,5 +4,4 @@ const nonew = () => Class => {
     return _Class;
 };
 
-export default nonew;
-module.exports = nonew;
+export { nonew, nonew as default };
